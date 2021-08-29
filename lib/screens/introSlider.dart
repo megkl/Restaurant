@@ -1,3 +1,4 @@
+import 'package:aunty_kat_recipe_app/Pages/signUpPage.dart';
 import 'package:aunty_kat_recipe_app/screens/home.dart';
 import 'package:aunty_kat_recipe_app/screens/recipes/productList.dart';
 import 'package:flutter/material.dart';
@@ -78,7 +79,7 @@ class _IntroSliderState extends State<IntroSlider> {
         color: Colors.white,
       ),
       done: Text(
-        'Getting Stated',
+        'Getting Started',
         style: TextStyle(fontWeight: FontWeight.w600, color: Colors.white),
       ),
       dotsDecorator: const DotsDecorator(
@@ -97,7 +98,7 @@ class _IntroSliderState extends State<IntroSlider> {
   void goHomepage(context) {
     Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(builder: (context) {
-      return Recipes();
+      return SignUpPage();
     }), (Route<dynamic> route) => false);
     //Navigate to home page and remove the intro screen history
     //so that "Back" button wont work.

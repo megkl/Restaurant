@@ -1,4 +1,3 @@
-import 'package:aunty_kat_recipe_app/Pages/LoadingPage.dart';
 import 'package:aunty_kat_recipe_app/screens/home.dart';
 import 'package:aunty_kat_recipe_app/screens/splashScreen.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Widget page = LoadingPage();
+  Widget page = SplashScreen();
   final storage = FlutterSecureStorage();
   @override
   void initState() {
